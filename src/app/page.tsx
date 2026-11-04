@@ -29,7 +29,7 @@ export default function Home() {
     <section className="intro">
       <div className="intro-copy">
         <h1>hi! i’m Hannah</h1>
-        <p>i’m a <strong>photographer & creative thinker</strong> making thoughtful images and telling stories through a curious, considered lens.</p>
+        <p>I'm a <strong>designer &amp; photographer</strong> passionate in experiential marketing, story-telling, and bridging the gap between business objectives and consumer aesthetics.</p>
       </div>
       <CameraSketch />
       <Link href="#works" className="intro-explore">a few things i’ve been working on <ArrowDown size={16} /></Link>
