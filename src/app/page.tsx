@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { ArrowDown, ArrowUpRight } from 'lucide-react';
+import { ArrowUpRight } from 'lucide-react';
 import { site } from '@/data/site';
 import { photos } from '@/data/photography';
 import { campaigns } from '@/data/campaigns';
@@ -32,7 +32,6 @@ export default function Home() {
         <p>I'm a <strong>designer &amp; photographer</strong> passionate in experiential marketing, story-telling, and bridging the gap between business objectives and consumer aesthetics.</p>
       </div>
       <CameraSketch />
-      <Link href="#works" className="intro-explore">a few things i’ve been working on <ArrowDown size={16} /></Link>
     </section>
     <nav className="project-reel" aria-label="Explore selected projects">
       {previews.map((p, i) => <Link className="reel-item group" href={p.href} key={p.label}>
