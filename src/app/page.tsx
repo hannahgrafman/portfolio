@@ -1,6 +1,5 @@
 import Link from 'next/link';
 import { ArrowUpRight } from 'lucide-react';
-import { site } from '@/data/site';
 import { photos } from '@/data/photography';
 import { campaigns } from '@/data/campaigns';
 import { EditorialImage } from '@/components/image';
@@ -63,12 +62,6 @@ export default function Home() {
           </Link>
         </article>
       </div>
-    </section>
-    <section className="personal-note">
-      <p>a little about me</p>
-      <h2>Curious by nature.<br />Creative by instinct.</h2>
-      <p>{site.bio}</p>
-      <Link href="/about" className="text-link">meet the person behind the lens <ArrowUpRight size={18} /></Link>
     </section>
   </>;
 }
