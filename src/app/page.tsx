@@ -28,7 +28,7 @@ export default function Home() {
   return <>
     <section className="intro">
       <div className="intro-copy">
-        <h1>hi! i’m Hannah</h1>
+        <h1>Hi! I'm Hannah</h1>
         <p>I'm a <strong>designer &amp; photographer</strong> passionate in experiential marketing, story-telling, and bridging the gap between business objectives and consumer aesthetics.</p>
       </div>
       <CameraSketch />
