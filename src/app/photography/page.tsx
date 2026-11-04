@@ -1,0 +1,3 @@
+import {Gallery} from '@/components/gallery';
+export const metadata={title:'Photography',description:'Personal observations, quiet landscapes, and portraits in natural light.'};
+export default function Photography(){return <section className="section page-section"><p className="eyebrow">OBSERVATIONS / 2024 — 2025</p><div className="page-heading"><h1>Collected<br/><span className="serif">moments.</span></h1><p>Places, people, and the poetry in between. A visual notebook of things that made me pause.</p></div><p className="sample-note">Sample gallery · All images are placeholders for your own work.</p><Gallery/></section>}

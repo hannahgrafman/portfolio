@@ -1,0 +1,5 @@
+import {site} from '@/data/site';
+import {photos} from '@/data/photography';
+import {EditorialImage} from '@/components/image';
+export const metadata={title:'About'};
+export default function About(){return <section className="section page-section"><p className="eyebrow">THE PERSON BEHIND THE LENS</p><h1>Always<br/><span className="serif">looking closer.</span></h1><div className="about-grid"><div><EditorialImage src={photos[5].src} alt="Placeholder portrait — replace with your own photograph" className="portrait" priority/><p className="sample-note">Placeholder portrait · Sample biography & experience</p></div><div><h2>Hello, I’m Hannah.</h2><p>{site.bio}</p><p>{site.biography}</p><p className="eyebrow mt-8">{site.location}</p><h3 className="mt-12">Experience</h3>{site.experience.map(e=><div key={e.year} className="experience"><span className="eyebrow">{e.year}</span><h4>{e.title}</h4><p>{e.detail}</p></div>)}<h3 className="mt-12">What I bring</h3><ul className="skills">{site.skills.map(s=><li key={s}>{s}</li>)}</ul><h3 className="mt-12">Outside the frame</h3><ul className="interests">{site.interests.map(s=><li key={s}>{s}</li>)}</ul></div></div></section>}
