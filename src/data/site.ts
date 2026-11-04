@@ -8,7 +8,7 @@ export const site = {
   bio: "Hi! My name is Hannah Grafman and I'm currently a Business Economics and Cognitive Science student at the University of California San Diego.",
   biography: "I'm a multidisciplinary creative with a love for experiential marketing and photography. My goal is to bridge communities together through creative activations and artwork.",
   personalBio: "In my freetime I love to stay active by gymming, running, or playing pickleball, doing gel-x on myself or friends, and trying new food spots!",
-  skills: ['Photography', 'Art direction', 'Visual storytelling', 'Creative strategy', 'Editorial production', 'Image editing'],
+  skills: ["Outlook", "Excel", "Lightroom", "Indesign", "Illustrator", "Photoshop", "Figma", "Capcut", "Premiere Pro"],
   interests: ['Long walks with a camera', 'Independent magazines', 'Architecture & everyday objects', 'The changing California light'],
   experience: [
     {
