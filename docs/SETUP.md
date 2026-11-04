@@ -61,3 +61,5 @@ If your initial local branch has another name, use that branch instead of main. 
 
 ## Design system
 The current layout takes inspiration from the structure of leahchow.com: a handwritten greeting, simple fixed navigation, horizontal project previews, centered project cards, and a generous contact footer. The camera sketch is an original inline SVG; no artwork or project content from the reference is included. Locally served Cedarville Cursive and Funnel Sans fonts are in `public/fonts/` with their OFL licenses. Typography uses `next/font/local` in `src/app/layout.tsx`; layout, color, spacing, and responsive rules are in `src/app/globals.css`. The homepage’s image strip scrolls horizontally by touch, trackpad, or keyboard focus. Essential content remains visible without scroll-triggered animation.
+
+Instrument Serif is the default font throughout the site. Cedarville Cursive is reserved for the homepage greeting, footer invitation, and “something good.” on the contact page. Local font files and licenses are in `public/fonts/`.
