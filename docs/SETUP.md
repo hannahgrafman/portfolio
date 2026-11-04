@@ -58,3 +58,6 @@ git push -u origin main
 ```
 
 If your initial local branch has another name, use that branch instead of main. Sign into GitHub when prompted. In Vercel, choose Add New → Project, import this repository, and keep the detected Next.js framework preset. Add the environment variables above in project settings; use your production domain for NEXT_PUBLIC_SITE_URL. Deploy, then test mobile navigation, gallery keyboard controls, campaign pages, and a real contact submission. Subsequent pushes to the production branch trigger deployments. A server-capable deployment is required for /api/contact; do not enable static export.
+
+## Design system
+The current layout takes inspiration from the structure of leahchow.com: a handwritten greeting, simple fixed navigation, horizontal project previews, centered project cards, and a generous contact footer. The camera sketch is an original inline SVG; no artwork or project content from the reference is included. Locally served Cedarville Cursive and Funnel Sans fonts are in `public/fonts/` with their OFL licenses. Typography uses `next/font/local` in `src/app/layout.tsx`; layout, color, spacing, and responsive rules are in `src/app/globals.css`. The homepage’s image strip scrolls horizontally by touch, trackpad, or keyboard focus. Essential content remains visible without scroll-triggered animation.

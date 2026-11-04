@@ -1,7 +1,75 @@
 import Link from 'next/link';
-import { ArrowDownRight, ArrowUpRight } from 'lucide-react';
+import { ArrowDown, ArrowUpRight } from 'lucide-react';
 import { site } from '@/data/site';
 import { photos } from '@/data/photography';
 import { campaigns } from '@/data/campaigns';
 import { EditorialImage } from '@/components/image';
-export default function Home(){return <><section className="hero"><div className="eyebrow hero-label"><span className="status-dot"/> PHOTOGRAPHER & CREATIVE THINKER</div><h1>Looking closer.<br/><span className="serif">Seeing differently.</span></h1><div className="hero-bottom"><p>{site.description}</p><Link href="#selected" className="circle-link" aria-label="Explore selected work"><ArrowDownRight size={30}/></Link></div></section><section className="hero-photo group"><EditorialImage src={photos[1].src} alt={photos[1].alt} priority sizes="100vw"/><div className="photo-overlay"><span>A collection of moments, thoughtfully seen.</span><span>CALIFORNIA & BEYOND — 01 / 06</span></div></section><section id="selected" className="section"><div className="section-heading"><div><p className="eyebrow">01 / SELECTED WORK</p><h2>A sense of place.<br/><span className="serif">A point of view.</span></h2></div><Link className="text-link" href="/photography">Explore photography <ArrowUpRight size={17}/></Link></div><div className="photo-preview">{[photos[0],photos[5],photos[2]].map((p,i)=><Link href="/photography" className={`group preview-${i}`} key={p.id}><EditorialImage src={p.src} alt={p.alt}/><div className="caption"><span>{p.title}</span><span>{p.category} ↗</span></div></Link>)}</div></section><section className="section campaigns-section"><div className="section-heading"><div><p className="eyebrow">02 / CREATIVE COLLABORATIONS</p><h2>Stories with <span className="serif">purpose.</span></h2></div><Link className="text-link" href="/campaigns">All campaigns <ArrowUpRight size={17}/></Link></div><div className="campaign-grid">{campaigns.map(c=><Link href={`/campaigns/${c.slug}`} className="group" key={c.slug}><EditorialImage src={c.image} alt={c.alt}/><div className="campaign-title"><h3>{c.title}</h3><ArrowUpRight/></div><p className="muted">{c.category} / {c.year} · Concept project</p></Link>)}</div></section><section className="about-teaser section"><p className="eyebrow">03 / A LITTLE ABOUT ME</p><div><h2>Curiosity is the starting point.<br/><span className="serif">Connection is the goal.</span></h2><p>{site.bio}</p><Link href="/about" className="text-link">More about me <ArrowUpRight size={17}/></Link></div></section></>}
+
+function CameraSketch() {
+  return <svg className="camera-sketch" viewBox="0 0 220 190" fill="none" aria-hidden="true">
+    <g stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round">
+      <path d="M28 69 Q24 62 35 60 L67 58 L79 38 Q82 35 89 37 L135 39 L146 60 L185 64 Q195 64 194 76 L190 151 Q190 163 178 162 L38 158 Q23 157 25 144 Z"/>
+      <path d="M31 74 Q99 66 186 76 M44 59 L44 48 L62 48 L63 58 M152 58 L154 48 L175 50 L174 62"/>
+      <path d="M137 111 C139 148 83 155 77 118 C69 78 128 74 137 111 Z M126 110 C131 133 94 142 89 118 C83 92 121 87 126 110 Z"/>
+      <path d="M151 87 L176 89 L175 104 L150 103 Z M46 92 L59 92 M45 100 L58 100 M48 139 L63 140"/>
+      <path d="M183 158 Q215 191 210 112 Q211 55 191 51 M26 142 Q2 157 9 109 Q10 77 27 80"/>
+      <path d="M25 27 L20 14 M43 25 L49 11 M13 40 L2 36 M174 21 L179 10 M192 29 L206 25"/>
+    </g>
+  </svg>;
+}
+
+export default function Home() {
+  const previews = [
+    { src: campaigns[0].image, alt: campaigns[0].alt, href: `/campaigns/${campaigns[0].slug}`, label: campaigns[0].title },
+    { src: photos[5].src, alt: photos[5].alt, href: '/photography', label: 'Portraits & people' },
+    { src: campaigns[1].image, alt: campaigns[1].alt, href: `/campaigns/${campaigns[1].slug}`, label: campaigns[1].title },
+    { src: photos[1].src, alt: photos[1].alt, href: '/photography', label: 'Places & pauses' },
+  ];
+  return <>
+    <section className="intro">
+      <div className="intro-copy">
+        <h1>hi! i’m Hannah</h1>
+        <p>i’m a <strong>photographer & creative thinker</strong> making thoughtful images and telling stories through a curious, considered lens.</p>
+      </div>
+      <CameraSketch />
+      <Link href="#works" className="intro-explore">a few things i’ve been working on <ArrowDown size={16} /></Link>
+    </section>
+    <nav className="project-reel" aria-label="Explore selected projects">
+      {previews.map((p, i) => <Link className="reel-item group" href={p.href} key={p.label}>
+        <EditorialImage src={p.src} alt={p.alt} priority={i === 0} sizes="(max-width: 600px) 76vw, 30vw" />
+        <span>{p.label} <ArrowUpRight size={16} /></span>
+      </Link>)}
+    </nav>
+    <section id="works" className="featured-works">
+      <h2>Featured Works</h2>
+      <div className="featured-list">
+        {campaigns.map((c, i) => <article className="featured-entry" key={c.slug}>
+          <span className="work-index">0{i + 1} / CAMPAIGN</span>
+          <Link href={`/campaigns/${c.slug}`} className="work-card group">
+            <EditorialImage src={c.image} alt={c.alt} sizes="(max-width: 700px) 90vw, 600px" />
+            <div className="work-card-heading"><h3>{c.title}</h3><ArrowUpRight size={24} /></div>
+            <p>{c.overview}</p>
+            <span className="discipline">{c.category}</span>
+            <span className="concept-label">Concept project · {c.year}</span>
+          </Link>
+        </article>)}
+        <article className="featured-entry">
+          <span className="work-index">03 / PHOTOGRAPHY</span>
+          <Link href="/photography" className="work-card group">
+            <EditorialImage src={photos[1].src} alt={photos[1].alt} sizes="(max-width: 700px) 90vw, 600px" />
+            <div className="work-card-heading"><h3>Places & pauses</h3><ArrowUpRight size={24} /></div>
+            <p>A collection of landscapes, people, and small observations. Finding something worth remembering in the everyday.</p>
+            <span className="discipline">Photography / Personal work</span>
+            <span className="concept-label">Sample gallery · Placeholder images</span>
+          </Link>
+        </article>
+      </div>
+    </section>
+    <section className="personal-note">
+      <p>a little about me</p>
+      <h2>Curious by nature.<br />Creative by instinct.</h2>
+      <p>{site.bio}</p>
+      <Link href="/about" className="text-link">meet the person behind the lens <ArrowUpRight size={18} /></Link>
+    </section>
+  </>;
+}

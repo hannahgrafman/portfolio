@@ -1,3 +1,15 @@
 import Link from 'next/link';
+import { ArrowUpRight } from 'lucide-react';
 import { site } from '@/data/site';
-export function Footer(){return <footer className="footer"><div className="footer-top"><p>Have something in mind?</p><Link href="/contact" className="footer-cta">Let’s make it happen <span>↗</span></Link></div><div className="footer-bottom"><span>© {new Date().getFullYear()} {site.name}</span><span>Photography & creative direction</span><div>{site.socials.map(s=><a key={s.label} href={s.href} target="_blank" rel="noreferrer">{s.label} ↗</a>)}</div></div></footer>}
+
+export function Footer() {
+  return <footer className="footer">
+    <div className="footer-top">
+      <h2>Like what you see?</h2>
+      <p>Let’s talk projects, collaborations, or anything creative!</p>
+      <a className="footer-email" href={`mailto:${site.email}`}>{site.email} <ArrowUpRight size={20} /></a>
+      <div className="footer-socials">{site.socials.map(s => <a key={s.label} href={s.href} target="_blank" rel="noreferrer">{s.label} ↗</a>)}<Link href="/contact">send a message ↗</Link></div>
+    </div>
+    <div className="footer-bottom"><span>© {new Date().getFullYear()} {site.name}. All rights reserved.</span><span>Made with curiosity.</span></div>
+  </footer>;
+}
