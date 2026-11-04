@@ -32,7 +32,7 @@ h3 { font-size: 28px; font-weight: 400; line-height: 1.25; letter-spacing: -.03e
 .menu-toggle { display: none; }
 .intro { padding: 145px 4% 76px; position: relative; min-height: 470px; display: flex; align-items: center; justify-content: space-between; gap: 50px; }
 .intro-copy { flex: 1; }
-.intro h1 { font-family: var(--font-handwriting), cursive; font-size: clamp(62px, 7.5vw, 104px); letter-spacing: -.03em; line-height: 1.5; margin-bottom: 10px; }
+.intro h1 { font-family: "new-kansas-extra-swash", Georgia, serif; font-style: italic; font-size: clamp(54px, 6.6vw, 94px); letter-spacing: -.03em; line-height: 1.5; margin-bottom: 10px; }
 .intro-copy > p { font-size: 22px; line-height: 1.3; max-width: 890px; }
 .intro strong { font-weight: 600; }
 .camera-sketch { flex: 0 0 175px; width: 175px; transform: rotate(-9deg); margin-top: 8px; transition: transform .4s; }
@@ -132,7 +132,7 @@ h3 { font-size: 28px; font-weight: 400; line-height: 1.25; letter-spacing: -.03e
 .lightbox-caption p { font-size: 12px; color: #c3c6bd; margin-top: 5px; }
 .footer { padding: 80px 4% 25px; border-top: 1px solid var(--line); }
 .footer-top { text-align: center; padding-bottom: 95px; }
-.footer-top h2 { font-family: var(--font-handwriting), cursive; font-size: clamp(44px,5.5vw,72px); margin-bottom: 20px; }
+.footer-top h2 { font-family: "new-kansas-extra-swash", Georgia, serif; font-style: italic; font-size: clamp(44px,5.5vw,72px); margin-bottom: 20px; }
 .footer-top > p { font-size: 18px; margin-bottom: 20px; }
 .footer-email { display: inline-flex; gap: 15px; align-items: center; font-size: 22px; }
 .footer-socials { display: flex; justify-content: center; gap: 25px; font-size: 14px; margin-top: 24px; }
@@ -162,7 +162,7 @@ h3 { font-size: 28px; font-weight: 400; line-height: 1.25; letter-spacing: -.03e
   .nav.open { display: flex; }
   .nav a { width: fit-content; }
   .intro { padding: 68px 6% 70px; min-height: 375px; display: block; }
-  .intro h1 { font-size: clamp(47px,11.5vw,68px); line-height: 1.5; margin-bottom: 17px; }
+  .intro h1 { font-size: clamp(38px,10vw,60px); line-height: 1.5; margin-bottom: 17px; }
   .intro-copy > p { font-size: 18px; max-width: 300px; padding-right: 15px; }
   .camera-sketch { width: 74px; position: absolute; right: 6%; top: 32px; opacity: .75; }
   .intro-explore { left: 6%; bottom: 26px; font-size: 11px; }
@@ -217,4 +217,4 @@ h3 { font-size: 28px; font-weight: 400; line-height: 1.25; letter-spacing: -.03e
   *, *::before, *::after { transition: none!important; animation: none!important; }
 }
 
-.handwritten { font-family: var(--font-handwriting), cursive; font-style: normal; font-weight: 400; letter-spacing: -.025em; }
+.handwritten { font-family: "new-kansas-extra-swash", Georgia, serif; font-style: italic; font-weight: 400; letter-spacing: -.025em; }
