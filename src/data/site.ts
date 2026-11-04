@@ -8,5 +8,5 @@ export const site = {
   skills: ['Photography', 'Art direction', 'Visual storytelling', 'Creative strategy', 'Editorial production', 'Image editing'],
   interests: ['Long walks with a camera', 'Independent magazines', 'Architecture & everyday objects', 'The changing California light'],
   experience: [{year: '2023 — Present', title: 'Independent photographer & creative', detail: 'Sample experience · Replace with your own practice and collaborations.'}, {year: '2020 — 2023', title: 'Creative studio experience', detail: 'Sample experience · Add your previous role, studio, and responsibilities.'}],
-  socials: [{label: 'Instagram', href: 'https://instagram.com/'}, {label: 'LinkedIn', href: 'https://linkedin.com/'}],
+  socials: [{label: 'Instagram', href: 'https://instagram.com/'}, {label: 'LinkedIn', href: 'https://www.linkedin.com/in/hannahgrafman/'}],
 };
