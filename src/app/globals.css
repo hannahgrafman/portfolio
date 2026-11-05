@@ -74,10 +74,8 @@ h3 { font-size: 28px; font-weight: 400; line-height: 1.25; letter-spacing: -.03e
 .filter-bar button:hover { border-color: var(--line); }
 .filter-bar button[aria-pressed=true] { color: white; background: var(--ink); }
 .filter-bar span { font-size: 9px; vertical-align: super; margin-left: 5px; }
-.gallery { display: grid; grid-template-columns: repeat(3,1fr); gap: 40px 24px; }
-.gallery-item { text-align: left; background: transparent; border: 0; padding: 0; color: inherit; }
-.gallery-item:nth-child(3n+2) .image-wrap { aspect-ratio: 3/4; }
-.gallery-item:nth-child(3n) .image-wrap { aspect-ratio: 1; }
+.gallery { columns: 3; column-gap: 24px; }
+.gallery-item { display: inline-block; width: 100%; break-inside: avoid; margin-bottom: 34px; text-align: left; background: transparent; border: 0; padding: 0; color: inherit; }
 .caption { display: flex; justify-content: space-between; gap: 12px; font-size: 14px; margin-top: 13px; }
 .caption span:last-child { font-size: 10px; color: var(--muted); }
 .photo-location { font-size: 11px; color: var(--muted); margin-top: 5px; }
@@ -150,7 +148,7 @@ h3 { font-size: 28px; font-weight: 400; line-height: 1.25; letter-spacing: -.03e
   .intro-copy > p { font-size: 19px; }
   .camera-sketch { flex-basis: 130px; width: 130px; }
   .reel-item { flex-basis: 38%; }
-  .gallery { grid-template-columns: repeat(2,1fr); }
+  .gallery { columns: 2; }
   .section { padding: 65px 5%; }
   .about-grid, .contact-grid { gap: 6%; }
   .work-index { left: 0; }
@@ -188,8 +186,7 @@ h3 { font-size: 28px; font-weight: 400; line-height: 1.25; letter-spacing: -.03e
   .page-heading > p { margin-top: 25px; font-size: 15px; }
   .filter-bar { gap: 5px; margin-top: 25px; flex-wrap: wrap; padding: 18px 0; }
   .filter-bar button { font-size: 12px; padding: 5px 10px; }
-  .gallery { gap: 28px 15px; }
-  .gallery .image-wrap { aspect-ratio: 3/4!important; }
+  .gallery { column-gap: 15px; }
   .gallery .caption { display: block; font-size: 12px; }
   .gallery .caption > span:last-child { display: none; }
   .photo-location { font-size: 10px; }

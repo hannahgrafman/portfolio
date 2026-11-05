@@ -20,9 +20,9 @@ function CameraSketch() {
 export default function Home() {
   const previews = [
     { src: campaigns[0].image, alt: campaigns[0].alt, href: `/campaigns/${campaigns[0].slug}`, label: campaigns[0].title },
-    { src: photos[5].src, alt: photos[5].alt, href: '/photography', label: 'Portraits & people' },
+    { src: photos[8].src, alt: photos[8].alt, href: '/photography', label: 'Posed Shots' },
     { src: campaigns[1].image, alt: campaigns[1].alt, href: `/campaigns/${campaigns[1].slug}`, label: campaigns[1].title },
-    { src: photos[1].src, alt: photos[1].alt, href: '/photography', label: 'Places & pauses' },
+    { src: photos[0].src, alt: photos[0].alt, href: '/photography', label: 'Sports Photography' },
   ];
   return <>
     <section className="intro">
@@ -54,11 +54,11 @@ export default function Home() {
         <article className="featured-entry">
           <span className="work-index">03 / PHOTOGRAPHY</span>
           <Link href="/photography" className="work-card group">
-            <EditorialImage src={photos[1].src} alt={photos[1].alt} sizes="(max-width: 700px) 90vw, 600px" />
-            <div className="work-card-heading"><h3>Places & pauses</h3><ArrowUpRight size={24} /></div>
-            <p>A collection of landscapes, people, and small observations. Finding something worth remembering in the everyday.</p>
-            <span className="discipline">Photography / Personal work</span>
-            <span className="concept-label">Sample gallery · Placeholder images</span>
+            <EditorialImage src={photos[0].src} alt={photos[0].alt} sizes="(max-width: 700px) 90vw, 600px" />
+            <div className="work-card-heading"><h3>Through my lens</h3><ArrowUpRight size={24} /></div>
+            <p>Softball action, team moments, and portraits that celebrate milestones.</p>
+            <span className="discipline">Sports Photography / Posed Shots</span>
+            
           </Link>
         </article>
       </div>
