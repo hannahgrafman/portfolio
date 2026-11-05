@@ -188,7 +188,6 @@ h3 { font-size: 28px; font-weight: 400; line-height: 1.25; letter-spacing: -.03e
   .filter-bar button { font-size: 12px; padding: 5px 10px; }
   .gallery { column-gap: 15px; }
   .gallery .caption { display: block; font-size: 12px; }
-  .gallery .caption > span:last-child { display: none; }
   .photo-location { font-size: 10px; }
   .campaign-grid { grid-template-columns: 1fr; gap: 30px; }
   .campaign-grid > a { padding: 14px; }
