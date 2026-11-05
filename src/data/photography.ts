@@ -133,5 +133,45 @@ export const photos: Photo[] = [
     "alt": "A softball player slides toward home plate as the catcher reaches for the tag.",
     "width": 2400,
     "height": 1932
+  },
+  {
+    "id": "14",
+    "title": "Across the diamond",
+    "location": "Softball practice",
+    "category": "Sports Photography",
+    "src": "/images/gallery/dsc00269.webp",
+    "alt": "A softball player winds up to throw a yellow ball across the infield.",
+    "width": 1744,
+    "height": 2400
+  },
+  {
+    "id": "15",
+    "title": "A quiet moment",
+    "location": "Portrait session",
+    "category": "Posed Shots",
+    "src": "/images/gallery/dsc01670.webp",
+    "alt": "A woman looks down at a baby resting in a front carrier.",
+    "width": 1335,
+    "height": 2400
+  },
+  {
+    "id": "16",
+    "title": "Back to the bag",
+    "location": "Softball practice",
+    "category": "Sports Photography",
+    "src": "/images/gallery/dsc00320.webp",
+    "alt": "A runner slides headfirst toward a base as a fielder reaches for a tag.",
+    "width": 1641,
+    "height": 2400
+  },
+  {
+    "id": "17",
+    "title": "Behind the mask",
+    "location": "Softball practice",
+    "category": "Sports Photography",
+    "src": "/images/gallery/dsc00474.webp",
+    "alt": "A smiling catcher in protective gear holds a glove beside the field.",
+    "width": 1347,
+    "height": 2400
   }
 ];
