@@ -173,5 +173,35 @@ export const photos: Photo[] = [
     "alt": "A smiling catcher in protective gear holds a glove beside the field.",
     "width": 1347,
     "height": 2400
-  }
+  },
+{
+  "id": "18",
+  "title": "Fielding practice",
+  "location": "Softball practice",
+  "category": "Sports Photography",
+  "src": "/images/gallery/dsc00728.webp",
+  "alt": "A softball player bends to field a ground ball on the sunlit infield.",
+  "width": 1697,
+  "height": 2400
+},
+{
+  "id": "19",
+  "title": "From the dugout",
+  "location": "Softball practice",
+  "category": "Sports Photography",
+  "src": "/images/gallery/dsc01231.webp",
+  "alt": "Softball teammates cheer beside the dugout fence at UC San Diego.",
+  "width": 1600,
+  "height": 2400
+},
+{
+  "id": "20",
+  "title": "At contact",
+  "location": "Softball practice",
+  "category": "Sports Photography",
+  "src": "/images/gallery/dsc00953.webp",
+  "alt": "A softball batter connects with a pitch as the catcher reaches behind the plate.",
+  "width": 1454,
+  "height": 2400
+}
 ];
