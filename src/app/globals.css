@@ -223,3 +223,5 @@ h3 { font-size: 28px; font-weight: 400; line-height: 1.25; letter-spacing: -.03e
 .experience-role { font-size: 16px; margin-bottom: 12px!important; }
 .experience-highlights { padding-left: 18px; color: var(--muted); font-size: 15px; line-height: 1.65; list-style: disc; }
 .experience-highlights li + li { margin-top: 8px; }
+
+.gallery-empty { padding: 55px 0 75px; color: var(--muted); font-size: 20px; }
