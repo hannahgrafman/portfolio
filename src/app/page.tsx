@@ -48,7 +48,6 @@ export default function Home() {
             <div className="work-card-heading"><h3>{c.title}</h3><ArrowUpRight size={24} /></div>
             <p>{c.overview}</p>
             <span className="discipline">{c.category}</span>
-            <span className="concept-label">Concept project · {c.year}</span>
           </Link>
         </article>)}
         <article className="featured-entry">
